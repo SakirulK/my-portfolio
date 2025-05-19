@@ -1,103 +1,102 @@
-import Image from "next/image";
+import Image from 'next/image';
+import Slider from './Slider';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen bg-blue-100">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Hero Section */}
+      <section className="flex flex-col md:flex-row justify-center items-center px-6 py-24 max-w-6xl mx-auto gap-12">
+        {/* Image block */}
+        <div className="flex-1">
+          <Image
+            src="/FBD563FA-2DCD-4581-AA56-F5FBC57F2190.JPG"
+            alt="Sakirul Karim"
+            width={300}
+            height={300}
+            className="rounded-lg shadow-lg"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        {/* Text block */}
+        <div className="flex-1 text-center md:text-left">
+          <h2 className="text-5xl font-extrabold mb-6 text-gray-900">
+            Hi, I&apos;m <span className="text-blue-600">Sakirul Karim.</span>
+          </h2>
+          <p className="text-xl text-gray-700">
+            I am currently enrolled at Drexel University pursuing a bachelor's degree in Computer Science.
+          </p>
+        </div>
+      </section>
+
+      {/* Intro Section */}
+      <section className="bg-blue-100 py-24 px-6">
+        <div className="max-w-6xl mx-auto flex justify-end">
+          <div className="flex items-start gap-6 text-right">
+            {/* Line */}
+            <div className="pt-2">
+              <div className="w-24 h-px bg-gray-400"></div>
+            </div>
+
+            {/* Title + Paragraph */}
+            <div className="max-w-xl">
+              <h3 className="text-xl md:text-2xl font-semibold text-blue-900 mb-4">
+                Intro
+              </h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-4">
+                I'm a passionate and motivated <span className="font-semibold text-blue-600">Computer Science</span> student with hands-on experience in
+                <span className="font-semibold text-blue-600"> full-stack development</span>,
+                <span className="font-semibold text-blue-600"> machine learning</span>, and collaborative software projects.
+              </p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+                Whether it's building user-friendly web apps or working on
+                <span className="font-semibold text-blue-600"> AI-driven solutions</span>, I enjoy learning by doing and thrive in creative, fast-paced environments.
+                Outside of coding, you'll find me exploring new tech, reading up on finance, or diving into personal growth habits.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Projects Preview */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-3xl font-bold text-blue-700 mb-10 text-center">Featured Projects</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Project Card */}
+            <div className="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition border border-blue-100">
+              <h4 className="text-xl font-semibold text-blue-800 mb-2">Heart Disease Prediction (AI/ML)</h4>
+              <p className="text-gray-700 mb-4">
+                Built a machine learning model to predict the likelihood of heart disease using patient data. Utilized logistic regression, decision trees, and feature selection techniques.
+              </p>
+              <Link href="/projects" className="text-blue-600 font-medium hover:underline">
+                View Project →
+              </Link>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition border border-blue-100">
+              <h4 className="text-xl font-semibold text-blue-800 mb-2">StyleSync App</h4>
+              <p className="text-gray-700 mb-4">
+                A virtual wardrobe app where users can upload clothes, create outfits, and manage their closet. Built using React, Node.js, and Agile development practices.
+              </p>
+              <Link href="/projects" className="text-blue-600 font-medium hover:underline">
+                View Project →
+              </Link>
+            </div>
+          </div>
+
+          {/* Link to full project page */}
+          <div className="text-center mt-10">
+            <Link href="/projects" className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded hover:bg-blue-700 transition">
+              See All Projects
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Quote Slider */}
+      <Slider />
+    </main>
   );
 }
