@@ -25,7 +25,7 @@ export default function Home() {
             Hi, I&apos;m <span className="text-blue-600">Sakirul Karim.</span>
           </h2>
           <p className="text-xl text-gray-700">
-            I am currently enrolled at Drexel University pursuing a bachelor's degree in Computer Science.
+            I am currently enrolled at Drexel University pursuing a bachelor&apos;s degree in Computer Science.
           </p>
         </div>
       </section>
@@ -45,14 +45,14 @@ export default function Home() {
                 Intro
               </h3>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-4">
-                I'm a passionate and motivated <span className="font-semibold text-blue-600">Computer Science</span> student with hands-on experience in
+                I&apos;m a passionate and motivated <span className="font-semibold text-blue-600">Computer Science</span> student with hands-on experience in
                 <span className="font-semibold text-blue-600"> full-stack development</span>,
                 <span className="font-semibold text-blue-600"> machine learning</span>, and collaborative software projects.
               </p>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
-                Whether it's building user-friendly web apps or working on
+                Whether it&apos;s building user-friendly web apps or working on
                 <span className="font-semibold text-blue-600"> AI-driven solutions</span>, I enjoy learning by doing and thrive in creative, fast-paced environments.
-                Outside of coding, you'll find me exploring new tech, reading up on finance, or diving into personal growth habits.
+                Outside of coding, you&apos;ll find me exploring new tech, reading up on finance, or diving into personal growth habits.
               </p>
             </div>
           </div>
